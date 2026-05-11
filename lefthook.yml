@@ -1,4 +1,5 @@
 pre-commit:
+  parallel: true
   commands:
     tsc:
       run: bunx tsc --noEmit
