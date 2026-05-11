@@ -1,0 +1,17 @@
+# Bun
+node_modules/
+
+# Build artifacts
+dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# Local env
+.env
+.env.local
+
+# IDEs
+.idea/
+.vscode/
+docs/

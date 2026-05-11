@@ -1,0 +1,8 @@
+pre-commit:
+  commands:
+    tsc:
+      run: bunx tsc --noEmit
+    biome:
+      glob: "*.{ts,tsx,js,jsx,cjs,mjs,json,jsonc}"
+      run: bunx biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
+      stage_fixed: true

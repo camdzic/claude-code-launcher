@@ -1,0 +1,65 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun run build)",
+      "Bash(bun run tsc)",
+      "Bash(bun run biome)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git show *)",
+      "Bash(git branch *)",
+      "Bash(git blame *)",
+      "Bash(git stash list)",
+      "Bash(git stash show *)",
+      "Bash(git ls-files *)",
+      "Bash(git rev-parse *)",
+      "Bash(git merge-base *)",
+      "Bash(git describe *)",
+      "Bash(git shortlog *)",
+      "Bash(git tag)",
+      "Bash(git tag -l *)",
+      "Bash(git remote -v)",
+      "Bash(git remote show *)",
+      "Bash(git config --get *)",
+      "Bash(git config --list)",
+      "Bash(git reflog)",
+      "Bash(git reflog show *)",
+      "Bash(git ls-remote *)",
+      "Bash(git cherry *)",
+      "Bash(gh pr view *)",
+      "Bash(gh pr list *)",
+      "Bash(gh pr diff *)",
+      "Bash(gh issue view *)",
+      "Edit(src/**)",
+      "Write(src/**)",
+      "Edit(CLAUDE.md)",
+      "Edit(.claude/**)",
+      "Write(.claude/**)"
+    ],
+    "ask": [
+      "Edit(package.json)",
+      "Edit(tsconfig.json)",
+      "Edit(biome.json)",
+      "Edit(lefthook.yml)"
+    ],
+    "deny": [
+      "Bash(bun run start)",
+      "Bash(bun src/index.ts)",
+      "Bash(bun src/index.ts *)",
+      "Bash(bun run src/index.ts)",
+      "Bash(bun run src/index.ts *)",
+      "Bash(bun install)",
+      "Edit(bun.lock)"
+    ]
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  },
+  "effortLevel": "xhigh",
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "preferredNotifChannel": "terminal_bell"
+}

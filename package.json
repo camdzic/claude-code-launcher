@@ -1,0 +1,37 @@
+{
+  "name": "claude-code-launcher",
+  "description": "Windows TUI for picking a recent project folder and launching Claude Code in it",
+  "type": "module",
+  "author": {
+    "name": "Aldin Čamdžić",
+    "email": "acamdzic0@proton.me"
+  },
+  "license": "CC BY-NC 4.0",
+  "os": [
+    "win32"
+  ],
+  "engines": {
+    "bun": ">=1.3.10"
+  },
+  "scripts": {
+    "start": "bun run src/index.tsx",
+    "build": "bun run scripts/build.ts",
+    "biome": "bunx biome check --write",
+    "tsc": "bunx tsc --noEmit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.15",
+    "@types/bun": "1.3.10",
+    "@types/react": "^19.2.14",
+    "lefthook": "^2.1.6",
+    "react-devtools-core": "^7.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "5.7.3"
+  },
+  "dependencies": {
+    "ink": "^7.0.2",
+    "ink-text-input": "^6.0.0",
+    "react": "^19.2.6"
+  }
+}

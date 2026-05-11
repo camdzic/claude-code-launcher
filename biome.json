@@ -1,0 +1,87 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "includes": ["**"],
+    "ignoreUnknown": true
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "lineEnding": "lf"
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "semicolons": "always",
+      "trailingCommas": "none"
+    }
+  },
+  "json": {
+    "formatter": {
+      "trailingCommas": "none"
+    }
+  },
+  "linter": {
+    "rules": {
+      "recommended": true,
+      "nursery": {
+        "noFloatingPromises": {
+          "fix": "safe",
+          "level": "error",
+          "options": {}
+        }
+      },
+      "complexity": {
+        "noStaticOnlyClass": "off",
+        "useDateNow": {
+          "level": "error",
+          "fix": "safe",
+          "options": {}
+        },
+        "noForEach": "error",
+        "noUselessSwitchCase": {
+          "level": "error",
+          "fix": "safe",
+          "options": {}
+        }
+      },
+      "correctness": {
+        "noUnusedImports": {
+          "level": "error",
+          "fix": "safe",
+          "options": {}
+        },
+        "noUnusedVariables": "error"
+      },
+      "style": {
+        "useBlockStatements": {
+          "level": "error",
+          "fix": "safe",
+          "options": {}
+        },
+        "useTemplate": {
+          "level": "error",
+          "fix": "safe",
+          "options": {}
+        },
+        "useNodejsImportProtocol": {
+          "level": "error",
+          "fix": "safe",
+          "options": {}
+        },
+        "noUnusedTemplateLiteral": {
+          "level": "error",
+          "fix": "safe",
+          "options": {}
+        },
+        "useExplicitLengthCheck": {
+          "level": "error",
+          "fix": "safe",
+          "options": {}
+        }
+      },
+      "suspicious": {
+        "useAwait": "error"
+      }
+    }
+  }
+}
