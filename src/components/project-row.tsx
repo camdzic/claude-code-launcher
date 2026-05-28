@@ -10,7 +10,7 @@ type ProjectRowProps = {
 
 export function ProjectRow({ entry, selected, missing }: ProjectRowProps) {
   const prefix = selected ? '▶ ' : '  ';
-  
+
   return (
     <Box flexDirection="column">
       <Box>

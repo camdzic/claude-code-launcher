@@ -113,7 +113,7 @@ function isProjectEntryArray(value: unknown): value is ProjectEntry[] {
     if (typeof item !== 'object' || item === null) {
       return false;
     }
-    
+
     const e = item as Record<string, unknown>;
 
     if (typeof e.path !== 'string') {

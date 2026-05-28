@@ -50,7 +50,7 @@ export async function pickFolder() {
     if (first.length === 0) {
       return undefined;
     }
-    
+
     return first;
   } catch {
     return undefined;

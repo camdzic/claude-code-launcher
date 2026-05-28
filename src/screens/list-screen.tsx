@@ -31,7 +31,7 @@ export function ListScreen({
           mode.kind === 'confirmDelete' && mode.index === index;
         const showConfirmMissing =
           mode.kind === 'confirmRemoveMissing' && mode.index === index;
-          
+
         return (
           <Box key={entry.path} flexDirection="column">
             <ProjectRow
