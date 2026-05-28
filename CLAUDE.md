@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `bun run tsc` — type-check (no emit)
 - `bun run biome` — format + lint with autofix (`biome check --write`)
 
-A `lefthook` pre-commit hook runs `tsc --noEmit` and `biome check --write` on staged files. The repo is Windows-only (`"os": ["win32"]` in `package.json`); the Bun compile target is hard-coded to `bun-windows-x64`.
+A `lefthook` pre-commit hook runs two sequential steps (`piped: true`): `biome check --write` on staged `*.{ts,tsx,js,jsx,cjs,mjs,json,jsonc}` files (re-stages fixes), then `bunx tsc --noEmit` over the whole project when any `*.{ts,tsx}` files are staged. Either failing aborts the commit. The repo is Windows-only (`"os": ["win32"]` in `package.json`); the Bun compile target is hard-coded to `bun-windows-x64`.
 
 ### Commands you must NOT run
 
