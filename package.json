@@ -16,7 +16,7 @@
   "scripts": {
     "start": "bun run src/index.tsx",
     "build": "bun run scripts/build.ts",
-    "biome": "bunx biome check --write",
+    "biome": "biome check --write",
     "tsc": "bunx tsc --noEmit"
   },
   "devDependencies": {
